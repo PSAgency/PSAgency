@@ -14,17 +14,19 @@
         .checkmark { color: #3399ff; font-weight: bold; }
         .button { display: inline-block; margin: 20px 0; padding: 12px 24px; background: #ff4500; color: #fff; text-decoration: none; border-radius: 5px; font-size: 18px; }
         .work-examples { display: flex; flex-wrap: wrap; justify-content: center; gap: 20px; }
-        .work-examples img { width: 45%; max-width: 250px; border-radius: 10px; box-shadow: 0px 0px 10px #3399ff; transition: 0.3s; }
+        .work-examples img { width: 100%; max-width: 300px; border-radius: 10px; box-shadow: 0px 0px 10px #3399ff; transition: 0.3s; }
         .work-examples img:hover { box-shadow: 0px 0px 15px #3399ff; }
+        .work-examples .example { display: flex; flex-direction: column; align-items: center; }
         .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 15px; padding: 20px 0; }
         .section { padding: 40px 20px; }
+        a.work-link { color: #3399ff; font-size: 18px; display: block; margin-top: 10px; }
         @media (max-width: 768px) {
             .container { width: 90%; padding: 20px; }
             h1 { font-size: 28px; }
             p { font-size: 16px; }
             .grid { grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); }
             .work-examples { flex-direction: column; align-items: center; }
-            .work-examples img { width: 80%; max-width: 250px; }
+            .work-examples img { width: 80%; max-width: 300px; }
         }
     </style>
 </head>
@@ -40,27 +42,31 @@
             <p>We create <span class="highlight">high-quality, engaging short-form videos</span> designed to maximize reach and audience retention.</p>
             <p>With a total of approximately <span class="highlight">70M+ views</span> across our clients, including <span class="highlight">Mo Gawdat</span> (Ex-Google X, AI Speaker, Bestselling Author, and Podcaster), we specialize in transforming content into high-performing, viral media.</p>
             <p>We focus on <span class="highlight">your goals and business model</span>, ensuring every piece of content aligns with your message and speaks to your audience.</p>
-            <p><a href="https://docs.google.com/spreadsheets/d/1FsYBn35hMyPaCd9kjrXiNK8dtiW3_iE3yinfaQGXsnk/edit?usp=sharing" style="color: #3399ff;">Spreadsheet with the Best Performing Content</a></p>
+            <p><a href="https://docs.google.com/spreadsheets/d/1FsYBn35hMyPaCd9kjrXiNK8dtiW3_iE3yinfaQGXsnk/edit?usp=sharing" style="color: #3399ff; font-size: 18px;">Spreadsheet with the Best Performing Content</a></p>
         </section>
         <section class="section">
             <h2>Work Examples</h2>
             <div class="work-examples">
-                <a href="https://www.instagram.com/reel/DG8x8j5soGU/?utm_source=ig_web_copy_link" target="_blank">
-                    <img src="Ultiamte%20Trailer%20Thumbnail.jpg" alt="Mo Gawdat AI Trailer">
-                </a>
-                <a href="https://www.instagram.com/reel/DDKuA95t3eI/?igsh=MTNycnRiYWJpeWx6" target="_blank">
-                    <img src="Steven-Thumbnail.jpg" alt="Steven Bartlett Trailer">
-                </a>
+                <div class="example">
+                    <a href="https://www.instagram.com/reel/DG8x8j5soGU/?utm_source=ig_web_copy_link" target="_blank">
+                        <img src="Ultiamte%20Trailer%20Thumbnail.jpg" alt="Mo Gawdat AI Trailer">
+                    </a>
+                    <a href="https://www.instagram.com/reel/DG8x8j5soGU/?utm_source=ig_web_copy_link" class="work-link">Mo Gawdat AI Trailer</a>
+                </div>
+                <div class="example">
+                    <a href="https://www.instagram.com/reel/DDKuA95t3eI/?igsh=MTNycnRiYWJpeWx6" target="_blank">
+                        <img src="Steven-Thumbnail.jpg" alt="Steven Bartlett Trailer">
+                    </a>
+                    <a href="https://www.instagram.com/reel/DDKuA95t3eI/?igsh=MTNycnRiYWJpeWx6" class="work-link">Steven Bartlett Trailer</a>
+                </div>
             </div>
             <div class="work-examples">
-                <a href="https://www.instagram.com/reel/DG8x8j5soGU/?utm_source=ig_web_copy_link" style="color: #3399ff; display: block;">Mo Gawdat AI Trailer</a>
-                <a href="https://www.instagram.com/reel/DDKuA95t3eI/?igsh=MTNycnRiYWJpeWx6" style="color: #3399ff; display: block;">Steven Bartlett Trailer</a>
-            </div>
-            <div class="work-examples">
-                <a href="https://www.youtube.com/watch?v=4g96gEKsHQs&t=55s&ab_channel=MichaelMojo" target="_blank">
-                    <img src="mojo-thumbnail-spofford.jpg" alt="Eric Spofford Trailer" style="width: 50%; max-width: 400px; display: block; margin: auto;">
-                </a>
-                <a href="https://www.youtube.com/watch?v=4g96gEKsHQs&t=55s&ab_channel=MichaelMojo" style="color: #3399ff; display: block; margin-top: 10px;">Eric Spofford Trailer</a>
+                <div class="example">
+                    <a href="https://www.youtube.com/watch?v=4g96gEKsHQs&t=55s&ab_channel=MichaelMojo" target="_blank">
+                        <img src="mojo-thumbnail-spofford.jpg" alt="Eric Spofford Trailer" style="max-width: 400px; display: block; margin: auto;">
+                    </a>
+                    <a href="https://www.youtube.com/watch?v=4g96gEKsHQs&t=55s&ab_channel=MichaelMojo" class="work-link">Eric Spofford Trailer</a>
+                </div>
             </div>
         </section>
         <section class="section" id="contact">
