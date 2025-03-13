@@ -17,8 +17,9 @@
         .work-examples img { border-radius: 10px; box-shadow: 0px 0px 10px #3399ff; transition: 0.3s; }
         .work-examples img:hover { box-shadow: 0px 0px 15px #3399ff; }
         .work-examples .example { display: flex; flex-direction: column; align-items: center; }
-        .vertical-images img { width: 45%; aspect-ratio: 9 / 16; }
-        .horizontal-image img { width: 40%; max-width: 320px; display: block; margin: 20px auto; }
+        .vertical-images { display: flex; justify-content: center; gap: 20px; }
+        .vertical-images img { width: 90px; height: 160px; }
+        .horizontal-image img { width: 160px; height: 90px; display: block; margin: 20px auto; }
         .work-link { color: #3399ff; font-size: 18px; display: block; margin: 10px 0; }
         @media (max-width: 768px) {
             .container { width: 90%; padding: 20px; }
@@ -26,8 +27,8 @@
             p { font-size: 16px; }
             .grid { grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); }
             .work-examples { flex-direction: column; align-items: center; }
-            .vertical-images img { width: 80%; }
-            .horizontal-image img { width: 60%; }
+            .vertical-images { flex-direction: column; align-items: center; }
+            .horizontal-image img { width: 100px; height: 56px; }
         }
     </style>
 </head>
