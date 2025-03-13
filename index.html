@@ -4,8 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PS Agency - Podcast & Social Media Growth</title>
+    
+    <!-- Open Graph Meta Tags for Social Media Thumbnail -->
+    <meta property="og:title" content="PS Agency - Podcast & Social Media Growth">
+    <meta property="og:description" content="Helping Podcasts and Brands Dominate Social Media with high-quality trailers and engaging short-form videos.">
+    <meta property="og:image" content="https://raw.githubusercontent.com/PSAgency/PSAgency/main/PS-Agency-Logo.png">
+    <meta property="og:url" content="https://psagency.github.io/">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
+    
     <style>
-        body { font-family: Arial, sans-serif; margin: 0; padding: 0; background: linear-gradient(to right, #0a0a0a, #003366); color: #ddd; text-align: center; }
+        body { font-family: Arial, sans-serif; margin: 0; padding: 0; background: linear-gradient(to right, #0a0a0a, #003366); color: #ddd; text-align: center; overflow-x: hidden; }
         .container { max-width: 800px; margin: 40px auto; padding: 40px; background: rgba(0, 0, 0, 0.8); border-radius: 15px; border: 2px solid rgba(255, 255, 255, 0.2); box-shadow: 0 0 15px rgba(255, 255, 255, 0.1); }
         h1 { font-size: 36px; color: #3399ff; }
         h2 { color: #3399ff; }
@@ -18,19 +27,21 @@
         .work-examples img { border-radius: 10px; box-shadow: 0px 0px 10px #3399ff; transition: transform 0.3s ease, box-shadow 0.3s ease; }
         .work-examples img:hover { transform: scale(1.05); box-shadow: 0px 0px 15px #3399ff; }
         .work-examples .example { display: flex; flex-direction: column; align-items: center; }
-        .vertical-images { display: flex; justify-content: center; gap: 20px; }
+        .vertical-images { display: flex; justify-content: center; gap: 20px; align-items: center; }
         .vertical-images img { width: 180px; height: 320px; }
         .horizontal-image img { width: 320px; height: 180px; display: block; margin: 20px auto; }
         .work-link { color: #3399ff; font-size: 18px; display: block; margin: 10px 0; transition: transform 0.3s ease; }
         .work-link:hover { transform: scale(1.05); }
+        
         @media (max-width: 768px) {
             .container { width: 90%; padding: 20px; }
             h1 { font-size: 28px; }
             p { font-size: 16px; }
             .grid { grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); }
             .work-examples { flex-direction: column; align-items: center; }
-            .vertical-images { flex-direction: column; align-items: center; }
-            .horizontal-image img { width: 200px; height: 113px; }
+            .vertical-images { flex-direction: row; align-items: center; justify-content: center; }
+            .vertical-images img { width: 150px; height: 270px; }
+            .horizontal-image img { width: 280px; height: 158px; }
         }
     </style>
 </head>
@@ -45,7 +56,6 @@
             <h2>What We Do</h2>
             <p>We create <span class="highlight">high-quality, engaging short-form videos</span> designed to maximize reach and audience retention.</p>
             <p>With a total of approximately <span class="highlight">70M+ views</span> across our clients, including <span class="highlight">Mo Gawdat</span> (Ex-Google X, AI Speaker, Bestselling Author, and Podcaster), we specialize in transforming content into high-performing, viral media.</p>
-            <p>We focus on <span class="highlight">your goals and business model</span>, ensuring every piece of content aligns with your message and speaks to your audience.</p>
             <p><a href="https://docs.google.com/spreadsheets/d/1FsYBn35hMyPaCd9kjrXiNK8dtiW3_iE3yinfaQGXsnk/edit?usp=sharing" class="work-link">Spreadsheet with the Best Performing Content</a></p>
         </section>
         <section class="section">
@@ -72,11 +82,6 @@
                     <a href="https://www.youtube.com/watch?v=4g96gEKsHQs&t=55s&ab_channel=MichaelMojo" class="work-link">Eric Spofford Trailer</a>
                 </div>
             </div>
-        </section>
-        <section class="section" id="contact">
-            <h2>Let’s Work Together</h2>
-            <p>Our goal isn’t just to make content look good, it’s to make it work for you. Whether you need viral short-form videos, strategic content planning, or branding, we ensure your content connects, engages, and drives results.</p>
-            <a href="mailto:patrik.danicek99@gmail.com" class="button">Contact Me</a>
         </section>
     </div>
 </body>
