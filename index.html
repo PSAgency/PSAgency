@@ -12,15 +12,17 @@
         p { font-size: 18px; line-height: 1.6; color: #ccc; }
         .highlight { color: #ffffff; font-weight: bold; }
         .checkmark { color: #3399ff; font-weight: bold; }
-        .button { display: inline-block; margin: 20px 0; padding: 12px 24px; background: #ff4500; color: #fff; text-decoration: none; border-radius: 5px; font-size: 18px; }
+        .button { display: inline-block; margin: 20px 0; padding: 12px 24px; background: #ff4500; color: #fff; text-decoration: none; border-radius: 5px; font-size: 18px; transition: transform 0.3s ease; }
+        .button:hover { transform: scale(1.05); }
         .work-examples { display: flex; flex-wrap: wrap; justify-content: center; gap: 20px; }
-        .work-examples img { border-radius: 10px; box-shadow: 0px 0px 10px #3399ff; transition: 0.3s; }
-        .work-examples img:hover { box-shadow: 0px 0px 15px #3399ff; }
+        .work-examples img { border-radius: 10px; box-shadow: 0px 0px 10px #3399ff; transition: transform 0.3s ease, box-shadow 0.3s ease; }
+        .work-examples img:hover { transform: scale(1.05); box-shadow: 0px 0px 15px #3399ff; }
         .work-examples .example { display: flex; flex-direction: column; align-items: center; }
         .vertical-images { display: flex; justify-content: center; gap: 20px; }
         .vertical-images img { width: 180px; height: 320px; }
         .horizontal-image img { width: 320px; height: 180px; display: block; margin: 20px auto; }
-        .work-link { color: #3399ff; font-size: 18px; display: block; margin: 10px 0; }
+        .work-link { color: #3399ff; font-size: 18px; display: block; margin: 10px 0; transition: transform 0.3s ease; }
+        .work-link:hover { transform: scale(1.05); }
         @media (max-width: 768px) {
             .container { width: 90%; padding: 20px; }
             h1 { font-size: 28px; }
@@ -44,7 +46,7 @@
             <p>We create <span class="highlight">high-quality, engaging short-form videos</span> designed to maximize reach and audience retention.</p>
             <p>With a total of approximately <span class="highlight">70M+ views</span> across our clients, including <span class="highlight">Mo Gawdat</span> (Ex-Google X, AI Speaker, Bestselling Author, and Podcaster), we specialize in transforming content into high-performing, viral media.</p>
             <p>We focus on <span class="highlight">your goals and business model</span>, ensuring every piece of content aligns with your message and speaks to your audience.</p>
-            <p><a href="https://docs.google.com/spreadsheets/d/1FsYBn35hMyPaCd9kjrXiNK8dtiW3_iE3yinfaQGXsnk/edit?usp=sharing" style="color: #3399ff; font-size: 18px;">Spreadsheet with the Best Performing Content</a></p>
+            <p><a href="https://docs.google.com/spreadsheets/d/1FsYBn35hMyPaCd9kjrXiNK8dtiW3_iE3yinfaQGXsnk/edit?usp=sharing" class="work-link">Spreadsheet with the Best Performing Content</a></p>
         </section>
         <section class="section">
             <h2>Work Examples</h2>
