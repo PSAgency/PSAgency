@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PS Agency - Podcast & Social Media Growth</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 0; padding: 0; background: linear-gradient(to right, #0a0a0a, #003366); color: #ddd; text-align: center; }
+        .container { max-width: 800px; margin: 40px auto; padding: 40px; background: rgba(0, 0, 0, 0.8); border-radius: 15px; border: 2px solid rgba(255, 255, 255, 0.2); box-shadow: 0 0 15px rgba(255, 255, 255, 0.1); }
+        h1 { font-size: 36px; color: #3399ff; }
+        h2 { color: #3399ff; }
+        p { font-size: 18px; line-height: 1.6; color: #ccc; }
+        .highlight { color: #ffffff; font-weight: bold; }
+        .checkmark { color: #3399ff; font-weight: bold; }
+        .button { display: inline-block; margin: 20px 0; padding: 12px 24px; background: #ff4500; color: #fff; text-decoration: none; border-radius: 5px; font-size: 18px; }
+        .work-examples img { width: 100%; max-width: 100%; border-radius: 5px; margin: 10px 0; }
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 15px; padding: 20px 0; }
+        .section { padding: 40px 20px; }
+        @media (max-width: 768px) {
+            .container { width: 90%; padding: 20px; }
+            h1 { font-size: 28px; }
+            p { font-size: 16px; }
+            .grid { grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <section>
+            <h1>PS Agency</h1>
+            <p>Helping Podcasts and Brands Dominate Social Media</p>
+            <a href="#contact" class="button">Get in Touch</a>
+        </section>
+        <section class="section">
+            <h2>What We Do</h2>
+            <p>We create <span class="highlight">high-quality, engaging short-form videos</span> designed to maximize reach and audience retention.</p>
+            <p>With a total of <span class="highlight">70M+ views</span> across our clients, including <span class="highlight">Mo Gawdat</span> (Ex-Google X, AI Speaker, Bestselling Author, and Podcaster), we specialize in transforming content into high-performing, viral media.</p>
+            <p>We focus on <span class="highlight">your goals and business model</span>, ensuring every piece of content aligns with your message and speaks to your audience.</p>
+            <p><a href="https://docs.google.com/spreadsheets/d/1FsYBn35hMyPaCd9kjrXiNK8dtiW3_iE3yinfaQGXsnk/edit?usp=sharing" style="color: #3399ff;">Spreadsheet with the Best Performing Content</a></p>
+        </section>
+        <section class="section">
+            <h2>Work Examples</h2>
+            <div class="grid work-examples">
+                <img src="example1.jpg" alt="Work Example 1">
+                <img src="example2.jpg" alt="Work Example 2">
+                <img src="example3.jpg" alt="Work Example 3">
+                <img src="example4.jpg" alt="Work Example 4">
+                <img src="example5.jpg" alt="Work Example 5">
+            </div>
+        </section>
+        <section class="section">
+            <h2>Why Choose Us?</h2>
+            <p><span class="checkmark">✔</span> <span class="highlight">Deep audience & guest research</span> to create impactful content</p>
+            <p><span class="checkmark">✔</span> <span class="highlight">Proven track record</span> of viral social media growth</p>
+            <p><span class="checkmark">✔</span> <span class="highlight">Premium branding & design</span> to elevate your content</p>
+            <p><span class="checkmark">✔</span> <span class="highlight">Data-driven approach</span> to track and optimize performance</p>
+            <p><span class="checkmark">✔</span> <span class="highlight">Strategic storytelling</span>, we don’t just edit, we build narratives</p>
+        </section>
+        <section class="section" id="contact">
+            <h2>Let’s Work Together</h2>
+            <p>Our goal isn’t just to make content look good, it’s to make it work for you. Whether you need viral short-form videos, strategic content planning, or branding, we ensure your content connects, engages, and drives results.</p>
+            <a href="mailto:your-email@example.com" class="button">Contact Me</a>
+        </section>
+    </div>
+</body>
+</html>
