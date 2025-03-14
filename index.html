@@ -41,7 +41,7 @@
             <p>Helping Podcasts and Brands Dominate Social Media</p>
             <a href="mailto:patrik.danicek99@gmail.com" class="button">Contact Me</a>
         </section>
-        <section class="section">
+       <section class="section">
             <h2>What We Do</h2>
             <p>We follow a precise, proven process for crafting top-performing <span class="highlight">Trailers</span>, inspired by the success of <a href="https://www.instagram.com/steven?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" class="animated-link"><span class="highlight">Diary of a CEO</span></a>.</p>
             <p>With a total of <a href="https://docs.google.com/spreadsheets/d/1FsYBn35hMyPaCd9kjrXiNK8dtiW3_iE3yinfaQGXsnk/edit?usp=sharing" class="animated-link"><span class="highlight">70M+ views</span></a> across our clients, including <a href="https://www.instagram.com/mo_gawdat?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" class="animated-link"><span class="highlight">Mo Gawdat</span></a> (Ex-Google X, AI Speaker, Bestselling Author, and Podcaster), we specialize in transforming your videos into high-performing, viral content.</p>
@@ -65,6 +65,59 @@
         <a href="https://www.instagram.com/reel/DDKuA95t3eI/?igsh=MTNycnRiYWJpeWx6" class="work-link">Steven Bartlett Trailer</a>
     </div>
 </div>
+<div class="work-examples horizontal-image">
+    <div class="example">
+        <div class="video-container" onclick="playVideo(this, 'Eric-Trailer.mp4')">
+            <img src="mojo-thumbnail-spofford.jpg" alt="Eric Spofford Trailer" class="thumbnail">
+            <div class="play-button">▶</div>
+        </div>
+        <a href="https://www.youtube.com/watch?v=4g96gEKsHQs&t=55s&ab_channel=MichaelMojo" class="work-link">Eric Spofford Trailer</a>
+    </div>
+</div>
+
+<!-- CSS for Styling -->
+<style>
+    .video-container {
+        position: relative;
+        width: 180px;
+        height: 320px;
+        cursor: pointer;
+    }
+    .thumbnail {
+        width: 100%;
+        height: 100%;
+        border-radius: 10px;
+        box-shadow: 0px 0px 10px #3399ff;
+    }
+    .play-button {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 48px;
+        color: rgba(255, 255, 255, 0.7); /* Making the triangle transparent */
+        background: rgba(0, 0, 0, 0.6);
+        padding: 10px 20px;
+        border-radius: 50%;
+        text-align: center;
+    }
+    .play-button:hover {
+        background: rgba(0, 0, 0, 0.8);
+        color: rgba(255, 255, 255, 0.9); /* Slightly more visible on hover */
+    }
+</style>
+
+<!-- JavaScript for Click-to-Play Video -->
+<script>
+    function playVideo(container, videoSrc) {
+        container.innerHTML = `
+            <video width="180" height="320" controls autoplay>
+                <source src="${videoSrc}" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        `;
+    }
+</script>
 
 <!-- CSS for Styling -->
 <style>
