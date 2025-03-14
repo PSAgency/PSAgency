@@ -39,39 +39,40 @@
         <section>
             <h1>PS Agency</h1>
             <p>Helping Podcasts and Brands Dominate Social Media</p>
-            <a href="mailto:patrik.danicek99@gmail.com" class="button">Contact Me</a>
+            <a href="mailto:patrik.danicek99@gmail.com" class="button">Get in Touch</a>
         </section>
-       <section class="section">
+         <section class="section">
             <h2>What We Do</h2>
             <p>We follow a precise, proven process for crafting top-performing <span class="highlight">Trailers</span>, inspired by the success of <a href="https://www.instagram.com/steven?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" class="animated-link"><span class="highlight">Diary of a CEO</span></a>.</p>
             <p>With a total of <a href="https://docs.google.com/spreadsheets/d/1FsYBn35hMyPaCd9kjrXiNK8dtiW3_iE3yinfaQGXsnk/edit?usp=sharing" class="animated-link"><span class="highlight">70M+ views</span></a> across our clients, including <a href="https://www.instagram.com/mo_gawdat?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" class="animated-link"><span class="highlight">Mo Gawdat</span></a> (Ex-Google X, AI Speaker, Bestselling Author, and Podcaster), we specialize in transforming your videos into high-performing, viral content.</p>
             <p>We focus on <span class="highlight">your goals and business model</span>, ensuring every piece of content aligns with your message and speaks to your audience.</p>
             <p><a href="https://docs.google.com/spreadsheets/d/1FsYBn35hMyPaCd9kjrXiNK8dtiW3_iE3yinfaQGXsnk/edit?usp=sharing" class="work-link">Spreadsheet with the Best Performing Content</a></p>
         </section>
-       <h2>Work Examples</h2>
+    </div>
+      <h2>Work Examples</h2>
 <div class="work-examples vertical-images">
     <div class="example">
-        <div class="video-container" onclick="playVideo(this, 'Mo-Trailer.mp4')">
+        <div class="video-container" onclick="playVideo(this, 'Mo-Trailer.mp4', 180, 320)">
             <img src="Ultiamte%20Trailer%20Thumbnail.jpg" alt="Mo Gawdat AI Trailer" class="thumbnail">
             <div class="play-button">▶</div>
         </div>
         <a href="https://www.instagram.com/reel/DG8x8j5soGU/?utm_source=ig_web_copy_link" class="work-link">Mo Gawdat AI Trailer</a>
     </div>
     <div class="example">
-        <div class="video-container" onclick="playVideo(this, 'Steven-Trailer.mp4')">
+        <div class="video-container" onclick="playVideo(this, 'Steven-Trailer.mp4', 180, 320)">
             <img src="Steven-Thumbnail.jpg" alt="Steven Bartlett Trailer" class="thumbnail">
             <div class="play-button">▶</div>
         </div>
         <a href="https://www.instagram.com/reel/DDKuA95t3eI/?igsh=MTNycnRiYWJpeWx6" class="work-link">Steven Bartlett Trailer</a>
     </div>
 </div>
-<div class="work-examples horizontal-image">
-    <div class="example">
-        <div class="video-container" onclick="playVideo(this, 'Eric-Trailer.mp4')">
-            <img src="mojo-thumbnail-spofford.jpg" alt="Eric Spofford Trailer" class="thumbnail">
+<div class="work-examples horizontal-image" style="display: flex; justify-content: center; align-items: center; flex-direction: column;">
+    <div class="example" style="text-align: center;">
+        <div class="video-container" onclick="playVideo(this, 'Eric-Trailer.mp4', 320, 180)">
+            <img src="mojo-thumbnail-spofford.jpg" alt="Eric Spofford Trailer" class="thumbnail" style="width: 320px; height: 180px;">
             <div class="play-button">▶</div>
         </div>
-        <a href="https://www.youtube.com/watch?v=4g96gEKsHQs&t=55s&ab_channel=MichaelMojo" class="work-link">Eric Spofford Trailer</a>
+        <a href="https://www.youtube.com/watch?v=4g96gEKsHQs&t=55s&ab_channel=MichaelMojo" class="work-link" style="margin-top: 10px;">Eric Spofford Trailer</a>
     </div>
 </div>
 
@@ -79,8 +80,6 @@
 <style>
     .video-container {
         position: relative;
-        width: 180px;
-        height: 320px;
         cursor: pointer;
     }
     .thumbnail {
@@ -105,56 +104,22 @@
         background: rgba(0, 0, 0, 0.8);
         color: rgba(255, 255, 255, 0.9); /* Slightly more visible on hover */
     }
-</style>
-
-<!-- JavaScript for Click-to-Play Video -->
-<script>
-    function playVideo(container, videoSrc) {
-        container.innerHTML = `
-            <video width="180" height="320" controls autoplay>
-                <source src="${videoSrc}" type="video/mp4">
-                Your browser does not support the video tag.
-            </video>
-        `;
+    .horizontal-image .example {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
-</script>
-
-<!-- CSS for Styling -->
-<style>
-    .video-container {
-        position: relative;
-        width: 180px;
-        height: 320px;
-        cursor: pointer;
-    }
-    .thumbnail {
-        width: 100%;
-        height: 100%;
-        border-radius: 10px;
-        box-shadow: 0px 0px 10px #3399ff;
-    }
-    .play-button {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        font-size: 48px;
-        color: white;
-        background: rgba(0, 0, 0, 0.6);
-        padding: 10px 20px;
-        border-radius: 50%;
+    .work-link {
+        margin-top: 10px;
         text-align: center;
     }
-    .play-button:hover {
-        background: rgba(0, 0, 0, 0.8);
-    }
 </style>
 
 <!-- JavaScript for Click-to-Play Video -->
 <script>
-    function playVideo(container, videoSrc) {
+    function playVideo(container, videoSrc, width, height) {
         container.innerHTML = `
-            <video width="180" height="320" controls autoplay>
+            <video width="${width}" height="${height}" controls autoplay>
                 <source src="${videoSrc}" type="video/mp4">
                 Your browser does not support the video tag.
             </video>
